@@ -2,6 +2,8 @@ package cl.thisisalexis.myresumeskills.domain;
 
 import lombok.Builder;
 import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
 
@@ -15,10 +17,11 @@ import java.math.BigDecimal;
  */
 @Data
 @Builder
+@Document
 public class Skill {
-
-    public Integer level;
+    @Id
     private Long id;
+    public Integer level;
     private String name;
     private String description;
     private BigDecimal experience;
