@@ -1,4 +1,4 @@
-package cl.thisisalexis.myresumeskills.boot;
+package cl.thisisalexis.myresumeskills;
 
 import cl.thisisalexis.myresumeskills.configuration.MongoDbConfiguration;
 import cl.thisisalexis.myresumeskills.configuration.SwaggerConfiguration;
