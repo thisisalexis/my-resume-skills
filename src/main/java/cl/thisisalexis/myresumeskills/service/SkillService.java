@@ -19,4 +19,13 @@ public interface SkillService {
      */
     List<Skill> getAllSkills();
 
+
+    /**
+     * Add a skill.
+     *
+     * @param skill the skill
+     * @return the just created skill
+     */
+    Skill addSkill(Skill skill);
+
 }

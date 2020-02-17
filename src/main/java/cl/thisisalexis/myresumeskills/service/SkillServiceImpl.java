@@ -12,6 +12,13 @@ import java.util.List;
 import java.util.Random;
 
 
+/**
+ * The type Skill service.
+ *
+ * @author thisisalexis
+ * @since 1.0.0
+ * @version 1.0.0
+ */
 @Service
 @Log
 public class SkillServiceImpl implements SkillService {
@@ -33,4 +40,8 @@ public class SkillServiceImpl implements SkillService {
                 .build());
     }
 
+    @Override
+    public Skill addSkill(Skill skill) {
+        return skillRepository.save(skill);
+    }
 }
