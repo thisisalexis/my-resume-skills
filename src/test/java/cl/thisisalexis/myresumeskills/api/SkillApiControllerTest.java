@@ -1,6 +1,7 @@
 package cl.thisisalexis.myresumeskills.api;
 
 import cl.thisisalexis.myresumeskills.domain.Skill;
+import cl.thisisalexis.myresumeskills.repository.SkillRepository;
 import cl.thisisalexis.myresumeskills.service.SkillServiceImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.hamcrest.CoreMatchers;
@@ -31,6 +32,9 @@ class SkillApiControllerTest {
 
     @MockBean
     private SkillServiceImpl skillService;
+
+    @MockBean
+    private SkillRepository skillRepository;
 
     @BeforeEach
     void setUp() {
