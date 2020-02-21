@@ -26,4 +26,5 @@ public class SkillApiController implements SkillDocumentedApi {
     public ResponseEntity<Skill> addSkill(@RequestBody Skill skill) {
         return null;
     }
+
 }
